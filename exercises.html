@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微助教习题 - 模式识别备考网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="lib/polyfill.js"></script>
+    <script src="lib/mathjax-config.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="lib/mathjax-loader.js"></script>
+</head>
+<body>
+    <div class="decorative-circle decorative-circle-1"></div>
+    <div class="decorative-circle decorative-circle-2"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">微助教习题</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="knowledge_distribution.html" class="nav-link">知识点分布</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="practice.html" class="nav-link">练习题库</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chapters-section">
+            <div class="container">
+                <h2 class="section-title">微助教习题系统</h2>
+                
+                <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <h3 style="color: #667eea; margin-bottom: 2rem; font-size: 2rem;">
+                        <i class="fas fa-graduation-cap"></i> 欢迎使用微助教习题系统
+                    </h3>
+                    
+                    <p style="font-size: 1.5rem; margin-bottom: 2rem; color: #333; line-height: 1.8;">
+                        我们已将习题系统升级为更完善的练习题库，请点击下方按钮进入：
+                    </p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="practice.html" class="chapter-link" style="display: inline-block; padding: 1.5rem 3rem; font-size: 1.3rem;">
+                            <i class="fas fa-forward"></i> 进入练习题库
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 5px solid #667eea;">
+                        <h4 style="color: #667eea; margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> 系统特点</h4>
+                        <ul style="text-align: left; list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i> 涵盖各章节知识点</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i> 多种题型练习</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i> 实时答案解析</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #27ae60; margin-right: 10px;"></i> 智能错题统计</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-content">&copy; 2026 微助教习题系统. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="lib/aos/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out'
+        });
+        
+        // 回到顶部按钮
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 监听滚动事件以控制回到顶部按钮
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

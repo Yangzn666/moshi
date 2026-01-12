@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各章节知识点分布 - 模式识别备考网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="lib/polyfill.js"></script>
+    <script src="lib/mathjax-config.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="lib/mathjax-loader.js"></script>
+</head>
+<body>
+    <div class="decorative-circle decorative-circle-1"></div>
+    <div class="decorative-circle decorative-circle-2"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">模式识别备考</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#chapters" class="nav-link active">各章内容</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="practice.html" class="nav-link">练习题库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mock_test.html" class="nav-link">模拟测试</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="chapters" class="chapters-section">
+            <div class="container">
+                <h2 class="section-title">各章节知识点分布</h2>
+                
+                <div id="chapter1" class="content-container-wide">
+                    <h2 class="section-title">第一章 绪论</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.1 概论
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 模式识别</span>是信息科学和人工智能的重要分支，旨在通过计算机模拟人的感知能力，从观测到的原始数据中提取有效信息并作出分类或决策。</p>
+                                <p>主要任务包括：</p>
+                                <ul>
+                                    <li>模式采集与预处理</li>
+                                    <li>特征提取与选择</li>
+                                    <li>分类器设计</li>
+                                    <li>分类决策</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解模式识别的基本概念、流程和应用场景。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>模式识别包括预处理、特征提取、分类决策等环节，是让计算机自动识别对象或现象的过程。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>人脸识别、语音识别、手写数字识别等都是模式识别的典型应用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>掌握模式识别的基本流程，注意区分监督学习和无监督学习。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.2 特征矢量和特征空间
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>特征矢量是描述模式的基本数学工具，通常表示为：</p>
+                                <p class="math-display">$x = [x_1, x_2, ..., x_n]^T$</p>
+                                <p>特征空间是由所有特征矢量构成的n维空间，每个点代表一个模式样本。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握特征矢量的表示方法和特征空间的概念。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>特征提取与选择是模式识别的关键环节，需要从原始数据中提取有效的特征表示。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在手写数字识别中，一幅28×28像素的图像可以表示为784维的特征矢量，每个元素代表一个像素的灰度值。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>特征维度越高，计算复杂度越大，但不一定准确率越高，需要注意特征选择和降维。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.3 随机矢量的描述
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>随机矢量的概率特性通过概率密度函数描述：</p>
+                                <p class="math-display">均值矢量：$\mu = E[x]$</p>
+                                <p class="math-display">协方差矩阵：$\Sigma = E[(x-\mu)(x-\mu)^T]$</p>
+                                <p>这些统计量用于描述数据的分布特性和变量间的相关性。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握均值矢量和协方差矩阵的计算方法及其意义。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>协方差矩阵描述了变量间的相关性，在模式识别中用于刻画数据分布特性。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在二维正态分布中，协方差矩阵描述了两个特征之间的相关性强度。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>协方差矩阵是对称矩阵，对角线元素是各变量的方差。</p>
+
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.4 正态分布
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>多维正态分布在模式识别中具有重要意义：</p>
+                                <p class="math-display">$p(x) = \frac{1}{(2\pi)^{n/2}|\Sigma|^{1/2}} \times \exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)$</p>
+                                <p>正态分布的性质使其成为许多模式识别方法的基础假设。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握多维正态分布的概率密度函数表达式及其参数含义。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>多维正态分布是许多模式识别方法的基础假设，正态分布由均值μ和协方差矩阵Σ完全确定。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在贝叶斯分类器中，经常假设各类样本服从正态分布，从而可以计算后验概率。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>正态分布由均值μ和协方差矩阵Σ完全确定，掌握其性质有助于理解分类算法。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.5 预处理
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 预处理</span>的目的是提高信噪比，减少干扰。</p>
+                                <p>常见方法包括：</p>
+                                <ul>
+                                    <li>噪声去除（滤波）</li>
+                                    <li>图像增强（对比度调整）</li>
+                                    <li>归一化、标准化</li>
+                                    <li>变换（如傅里叶变换、小波变换）</li>
+                                    <li>尺寸缩放、旋转校正等</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握预处理的目的和常见方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>预处理是模式识别的关键环节，目的是提高信噪比，减少干扰，包括噪声去除、图像增强、归一化、标准化等方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在图像识别中，预处理步骤包括去噪、亮度调整、尺寸统一等。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>预处理能显著提高后续特征提取和分类的效果。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                1.6 特征提取与选择
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>特征提取是将原始数据转化为更有效的特征表示，主要方法包括：</p>
+                                <ul>
+                                    <li>主成分分析（PCA）</li>
+                                    <li>线性判别分析（LDA）</li>
+                                    <li>独立成分分析（ICA）</li>
+                                    <li>小波变换等</li>
+                                </ul>
+                                <p>特征选择是从原始特征中选取最具区分性的子集，主要方法包括：</p>
+                                <ul>
+                                    <li>过滤式（Filter）</li>
+                                    <li>包裹式（Wrapper）</li>
+                                    <li>嵌入式（Embedded）</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解特征提取和选择的目的和常用方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>特征提取是将原始数据转化为更有效的特征表示，方法包括主成分分析（PCA）、线性判别分析（LDA）等；特征选择是从原始特征中选取最具区分性的子集，方法包括过滤式、包裹式、嵌入式。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在人脸识别中，PCA可以提取主要的人脸特征，降低数据维度；在文本分类中，可以从成千上万个词汇中选择最重要的几十个作为特征。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>特征提取的目标是在保持重要信息的同时降低数据维度，合理的特征选择可以提高分类精度并降低计算复杂度。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="chapter2" class="content-container-wide">
+                    <h2 class="section-title">第二章 聚类分析</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                2.1 聚类分析的概念
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 聚类分析</span>是一种<span style="color: red; font-weight: bold;">无监督学习方法</span>，旨在将数据集中的样本分成若干个类别，使同类样本间相似度高，不同类样本间相似度低。</p>
+                                <p>聚类的基本原则：</p>
+                                <ul>
+                                    <li>最小化类内距离</li>
+                                    <li>最大化类间距离</li>
+                                    <li>保证聚类的紧凑性和分离性</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解聚类分析的基本概念、与分类的区别，掌握聚类的基本原则。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>聚类是无监督学习方法，目标是将相似的样本归为一类，使类内相似性高、类间差异大，属于非监督分类。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>客户分群、文档分类、图像分割等都是聚类分析的典型应用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>聚类是无监督学习，没有标签信息，需要根据样本间的相似性进行分组。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                2.2 模式相似性测度
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>常用的相似性测度包括：</p>
+                                <ul>
+                                    <li>欧氏距离：$d(x,y) = \sqrt{\sum(x_i-y_i)^2}$</li>
+                                    <li>曼哈顿距离：$d(x,y) = \sum|x_i-y_i|$</li>
+                                    <li>切比雪夫距离：$d(x,y) = \max|x_i-y_i|$</li>
+                                    <li><span style="color: red; font-weight: bold;">★ 马氏距离</span>：$d(x,y) = \sqrt{(x-y)^TS^{-1}(x-y)}$</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 马氏距离</span>的特点：不受变量尺度影响，能反映变量间的相关性，在多维空间中更具鲁棒性。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握各种距离的计算公式，特别是马氏距离的特性和应用场景。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>马氏距离不受变量尺度影响，能反映变量间的相关性，在多维空间中更具鲁棒性，衡量样本之间的相似性或差异性。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 记忆技巧：</span></p>
+                                <ul>
+                                    <li>欧氏距离：想象两点间的直线距离，"勾股定理"的多维扩展，根号下差值的平方和。</li>
+                                    <li>曼哈顿距离：想象在城市街区行走，只能沿网格前进，"横平竖直"之和，绝对值之和。</li>
+                                    <li>切比雪夫距离：关注最大差异维度，"短板效应"，所有维度差值的最大绝对值。</li>
+                                    <li>马氏距离：考虑数据分布的"形状"，通过协方差矩阵的逆进行标准化，是欧氏距离的广义形式。</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在人脸识别中，使用马氏距离可以更好地处理不同特征维度间的相关性。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>马氏距离考虑了数据的分布特性，适合处理相关特征，但计算复杂度较高。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                2.3 类的定义与类间距离
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>类的定义方式：</p>
+                                <ul>
+                                    <li>质心法：以类中所有样本的均值作为类的代表</li>
+                                    <li>直径法：类内样本间的最大距离</li>
+                                    <li>密度法：基于样本在空间中的分布密度</li>
+                                </ul>
+                                <p>类间距离的计算方法：</p>
+                                <ul>
+                                    <li>最短距离法</li>
+                                    <li>最长距离法</li>
+                                    <li>平均距离法</li>
+                                    <li>重心距离法</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握类的定义方法和类间距离的计算方式。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>类间距离衡量不同类之间的分离程度，类内离差矩阵反映类内样本的分散程度。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在层次聚类中，使用最短距离法会形成链式结构，而最长距离法会形成紧凑的球形簇。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>不同的类间距离定义会导致不同的聚类结果，需要根据数据特性选择合适的方法。</p>
+
+                                                                                d(A,D)=√[(5-1)²+(5-1)²]=√32≈5.66<br>
+                                                                                d(A,E)=√[(6-1)²+(4-1)²]=√34≈5.83<br>
+                                                                                d(B,C)=√[(4-2)²+(4-2)²]=√8≈2.83<br>
+                                                                                d(B,D)=√[(5-2)²+(5-2)²]=√18≈4.24<br>
+                                                                                d(B,E)=√[(6-2)²+(4-2)²]=√20≈4.47<br>
+                                                                                ∴ 最短距离 = 2.83 (对应B到C的距离)</li>
+                                                                            <li>最长距离法：取上述距离中的最大值 = 5.83 (对应A到E的距离)</li>
+                                                                            <li>平均距离法：d_avg = (4.24+5.66+5.83+2.83+4.24+4.47)/6 ≈ 4.55</li>
+                                                                            <li>重心距离法：d(g₁,g₂) = √[(5-1.5)²+(4.33-1.5)²] = √[(3.5)²+(2.83)²] = √[12.25+8.01] ≈ 4.50</li>
+                                                                        </ol>
+                                                                    </div>
+                                                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                2.4 准则函数
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>聚类准则函数用于评估聚类效果，常见的有：</p>
+                                <ul>
+                                    <li>$J_t = \sum_{i=1}^c \sum_{x \in \omega_i} ||x - m_i||^2$ （类内平方和准则）</li>
+                                    <li>$J_e = \sum_{i=1}^c N_i||m_i - m||^2$ （类间平方和准则）</li>
+                                    <li>$J = J_t + J_e$ （总体准则函数）</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ Fisher准则函数</span>：需掌握表达式及其意义，$J_F(w) = \frac{(m_1-m_2)^T w}{w^T S_w w}$。</p>
+                                <p><span style="color: red; font-weight: bold;">★ Fisher准则函数变量含义：</span></p>
+                                <ul>
+                                    <li><strong>w</strong>：投影方向向量，是我们要求解的最优投影方向</li>
+                                    <li><strong>m₁, m₂</strong>：第1类和第2类样本的均值向量</li>
+                                    <li><strong>(m₁-m₂)</strong>：两类均值向量的差，表示类间分离度</li>
+                                    <li><strong>(m₁-m₂)ᵀw</strong>：分子部分，表示投影后类间距离的平方</li>
+                                    <li><strong>S<sub>w</sub></strong>：类内离差矩阵（Within-class scatter matrix）</li>
+                                    <li><strong>wᵀS<sub>w</sub>w</strong>：分母部分，表示投影后类内散布的总和</li>
+                                    <li><strong>J<sub>F</sub>(w)</strong>：Fisher准则函数值，需要最大化的目标函数</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解各类准则函数的含义，特别是类内和类间准则的优化目标。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>准则函数用于衡量分类效果好坏的数学目标函数，Fisher准则函数的目标是最大化类间离散度与类内离散度的比值。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>K均值算法最小化类内平方和准则$J_t$，使每个簇内的样本尽可能接近簇中心。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>好的聚类应该使$J_t$尽可能小，$J_e$尽可能大，即类内紧凑、类间分离。</p>
+
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                2.5 聚类的算法
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>主要聚类算法：</p>
+                                <ul>
+                                    <li>层次聚类法（谱系聚类）</li>
+                                    <li><span style="color: red; font-weight: bold;">★ K-均值算法（C均值算法）</span>：动态聚类算法，迭代更新类心</li>
+                                    <li>ISODATA算法</li>
+                                    <li>基于密度的聚类算法</li>
+                                </ul>
+                                <p>聚类方法分类：</p>
+                                <ul>
+                                    <li>按最小距离原则的简单聚类法</li>
+                                    <li>按最大距离原则进行两类合并的方法（如层次聚类）</li>
+                                    <li>依据准则函数的动态聚类方法（如K-means）</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握K-均值算法的步骤和特点，理解其优缺点。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>动态聚类算法（如C均值算法）类心在不断修正，特点是需要预先设定类别数k，迭代优化类中心，K-means是动态聚类算法的代表性方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>K-均值算法在图像分割中的应用，将相似颜色的像素归为一类。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>K-均值算法需要预先设定类别数k，对初始中心点敏感，可能收敛到局部最优。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="chapter3" class="content-container-wide">
+                    <h2 class="section-title">第三章 判别域代数界面方程法</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.1 判别域界面方程分类的概念
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>判别函数g(x)用于分类决策：</p>
+                                <ul>
+                                    <li>若$g(x) > 0$，则$x \in \omega_1$类</li>
+                                    <li>若$g(x) < 0$，则$x \in \omega_2$类</li>
+                                    <li>若$g(x) = 0$，则x在决策边界上</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 线性判别函数的一般形式</span>：$g(x) = w^Tx + w_0$</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握判别函数的基本概念和分类规则，理解决策边界的意义。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>判别函数是利用已知类别样本建立判别规则，对未知样本进行分类的有监督学习方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在二维空间中，线性判别函数$g(x) = w_1x_1 + w_2x_2 + w_0$定义了一条直线作为决策边界。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>判别函数的符号决定了样本的类别归属，$g(x)=0$定义了决策边界。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.2 线性判别函数
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>线性判别函数具有良好的数学性质和计算效率，其决策边界是超平面。</p>
+                                <p>几何意义：w是决策面的法向量，$w_0$决定决策面的位置。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解线性判别函数的几何意义，掌握法向量和截距的作用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在图像分类中，线性判别函数可以快速判断图像属于哪个类别。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>线性判别函数计算简单，但只能处理线性可分的数据。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.3 判别函数值的鉴别意义、权空间及解空间
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 权空间</span>：以权向量w的各分量为坐标轴构成的空间</p>
+                                <p><span style="color: red; font-weight: bold;">★ 解空间</span>：满足分类条件的所有权向量构成的区域</p>
+                                <p>解的存在性与样本的线性可分性密切相关。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解权空间和解空间的概念，掌握线性可分性的判断方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>权空间是所有可能的权向量构成的空间，解空间是满足分类要求的权向量集合，它们在判别分析中起着重要作用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在二维特征空间中，权空间是三维的（包含$w_1, w_2, w_0$三个参数）。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>解空间的存在意味着存在能够正确分类所有训练样本的权向量。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.4 Fisher线性判别
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ Fisher准则</span>：最大化类间离散度与类内离散度的比值</p>
+                                <p class="math-display">$J(w) = \frac{(m_1 - m_2)^2}{s_1^2 + s_2^2}$</p>
+                                <p>其中$m_1, m_2$为两类样本的均值，$s_1^2, s_2^2$为类内离散度。</p>
+                                <p>更一般的Fisher准则函数形式：<br>
+                                $J_F(\vec{w}) = \frac{(\vec{m}_1 - \vec{m}_2)^T \vec{w}}{\vec{w}^T S_w \vec{w}}$</p>
+                                <p>其中：<br>
+                                - $\vec{m}_1, \vec{m}_2$：两类均值向量<br>
+                                - $S_w$：类内离差矩阵</p>
+                                <p>最优解：$\vec{w} \propto S_w^{-1}(\vec{m}_1 - \vec{m}_2)$</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握Fisher准则的表达式和优化目标，理解类间和类内离散度的概念。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>Fisher线性判别的目标是寻找一个投影方向$\vec{w}$，使得投影后类间离散度最大，类内离散度最小，理解并能写出Fisher准则函数的表达式及其意义。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 记忆技巧：</span>Fisher准则就像“分久必合，合久必分”的过程：类间尽量“分”（远），类内尽量“合”（近）。可记作“外斥内吸”，外部分子要大（类间离散度），内部分母要小（类内离散度）。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在人脸识别中，Fisher线性判别可以找到最佳投影方向，使不同人脸类别在投影后更容易区分。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>Fisher准则的目标是使投影后类间距离最大、类内距离最小，从而提高分类性能。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.5 线性可分条件下判别函数权矢量算法
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>线性可分条件下判别函数权矢量算法主要包括感知器算法和其他相关算法：</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 感知器算法</span>是最典型的线性可分条件下权矢量算法：</p>
+                                <p>若$g(x) \leq 0$且$x \in \omega_1$类，则$w(k+1) = w(k) + \rho x$</p>
+                                <p>若$g(x) \geq 0$且$x \in \omega_2$类，则$w(k+1) = w(k) - \rho x$</p>
+                                <p>其中$\rho$为学习率。</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 算法详细说明：</span></p>
+                                <ul>
+                                    <li><strong>初始化</strong>：设置初始权向量w(0)和阈值θ(0)，通常设为小的随机值</li>
+                                    <li><strong>迭代过程</strong>：对每个训练样本x，计算判别函数$g(x) = w^T x + \theta$</li>
+                                    <li><strong>错误检测</strong>：如果样本被错误分类，则更新权向量</li>
+                                    <li><strong>收敛条件</strong>：当所有样本都被正确分类时停止迭代</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 算法几何意义：</span></p>
+                                <ul>
+                                    <li>感知器算法通过不断调整决策超平面的法向量w和位置θ来移动决策边界</li>
+                                    <li>当$\omega_1$类样本被误分为$\omega_2$类时($g(x) \leq 0$)，通过$w(k+1) = w(k) + \rho x$使w向该样本方向调整</li>
+                                    <li>当$\omega_2$类样本被误分为$\omega_1$类时($g(x) \geq 0$)，通过$w(k+1) = w(k) - \rho x$使w背离该样本方向调整</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 其他相关算法：</span></p>
+                                <ul>
+                                    <li><strong>增量校正算法</strong>：基于梯度下降法，对误分类样本进行小幅调整</li>
+                                    <li><strong>批处理算法</strong>：每次迭代使用所有误分类样本的信息来更新权向量</li>
+                                    <li><strong>松弛算法</strong>：引入松弛变量允许某些样本的轻微错误分类</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 收敛性定理：</span>感知器算法在训练样本线性可分的情况下能够在有限步内收敛到一个解。</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握感知器算法的更新规则和收敛条件。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在手写数字识别中，感知器算法可以学习区分数字0和数字1的线性分类器。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>感知器算法只能解决线性可分问题，对于线性不可分问题需要使用其他方法。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.6 一般情况下的判别函数权矢量算法
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>针对线性不可分情况的改进算法：</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 松弛算法：</span></p>
+                                <ul>
+                                    <li>引入松弛变量ξ<sub>i</sub> ≥ 0，允许某些样本存在一定程度的错误分类</li>
+                                    <li>优化目标变为：min J(w,b,ξ) = (1/2)||w||² + C∑ξ<sub>i</sub>，其中C是惩罚系数</li>
+                                    <li>通过平衡间隔最大化和误分类惩罚来处理线性不可分问题</li>
+                                    <li>核心思想是“软边缘”而非“硬边缘”，允许少量样本违反分类约束</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 势函数法：</span></p>
+                                <ul>
+                                    <li>将判别函数表示为训练样本的非线性组合：g(x) = ∑α<sub>i</sub>K(x,x<sub>i</sub>) + b</li>
+                                    <li>使用势函数（核函数）K(x,x<sub>i</sub>)衡量样本间的相似性</li>
+                                    <li>通过非线性映射将原空间的复杂问题转化为高维空间的线性问题</li>
+                                    <li>允许更灵活的决策边界，能处理复杂的非线性分类问题</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 核方法：</span></p>
+                                <ul>
+                                    <li>通过核函数K(x<sub>i</sub>,x<sub>j</sub>) = φ(x<sub>i</sub>)·φ(x<sub>j</sub>)隐式实现高维映射</li>
+                                    <li>避免直接计算高维空间中的向量运算，有效解决维数灾难问题</li>
+                                    <li>常见核函数包括：线性核、多项式核、径向基函数(RBF)核、Sigmoid核等</li>
+                                    <li>核心优势是“核技巧”，在原空间计算等价于高维空间的内积运算</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>了解处理线性不可分问题的各种方法及其基本原理。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>核方法将低维线性不可分问题映射到高维空间，使其变为线性可分。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>核方法是支持向量机的基础，通过核函数避免显式高维映射。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.7 非线性判别函数
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p>当数据线性不可分时，需要使用非线性判别函数：</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 多项式判别函数：</span></p>
+                                <ul>
+                                    <li>通过多项式基函数将原始特征映射到高维空间，如φ(x) = [1, x₁, x₂, x₁², x₁x₂, x₂², ...]</li>
+                                    <li>判别函数形式为：g(x) = w₀ + w₁x₁ + w₂x₂ + w₃x₁² + w₄x₁x₂ + w₅x₂² + ...</li>
+                                    <li>能够捕获特征间的非线性关系，但随着多项式阶数增加，参数数量呈指数增长</li>
+                                    <li>适合处理低维空间中的非线性问题，但容易产生维数灾难</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 径向基函数网络（RBF Network）：</span></p>
+                                <ul>
+                                    <li>使用径向基函数作为激活函数的前馈神经网络，通常为高斯函数形式：φ(||x-c<sub>i</sub>||) = exp(-β||x-c<sub>i</sub>||²)</li>
+                                    <li>网络结构包括：输入层→基函数层（中心点c<sub>i</sub>）→输出层（权重w<sub>i</sub>）</li>
+                                    <li>具有局部逼近特性，每个基函数仅在中心附近区域有显著响应</li>
+                                    <li>训练过程包括：确定中心点位置（聚类方法）和学习输出层权重</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 支持向量机（SVM）：</span></p>
+                                <ul>
+                                    <li>基于结构风险最小化原则，寻找最大间隔超平面作为决策边界</li>
+                                    <li>通过拉格朗日乘数法将原问题转化为对偶问题：max W(α) = Σα<sub>i</sub> - (1/2)ΣΣα<sub>i</sub>α<sub>j</sub>y<sub>i</sub>y<sub>j</sub>K(x<sub>i</sub>,x<sub>j</sub>)</li>
+                                    <li>利用核函数K(x<sub>i</sub>,x<sub>j</sub>)实现非线性映射，避免直接计算高维空间中的内积</li>
+                                    <li>决策函数为：g(x) = sgn(Σα<sub>i</sub>y<sub>i</sub>K(x<sub>i</sub>,x) + b)，仅依赖支持向量</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解非线性判别函数的必要性，了解常用方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>支持向量机通过核函数处理非线性问题，在人脸识别等领域有广泛应用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>非线性方法虽然表达能力强，但也容易过拟合，需要合理选择参数。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                3.8 最近邻方法
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ K-最近邻算法(KNN)</span>是一种基于实例的学习方法：</p>
+                                <p>对于待分类样本x，找出训练集中与其最近的k个样本，根据这k个样本的类别进行投票决策。</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ KNN算法详细流程：</span></p>
+                                <ul>
+                                    <li>计算待分类样本与训练集中所有样本的距离（常用欧氏距离、曼哈顿距离等）</li>
+                                    <li>选取距离最近的k个样本</li>
+                                    <li>统计这k个样本的类别分布</li>
+                                    <li>将样本归入票数最多的类别</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ k值选择策略：</span></p>
+                                <ul>
+                                    <li>k取奇数避免平局情况（当只有两类时）</li>
+                                    <li>k太小（如k=1）容易过拟合，对噪声敏感，决策边界复杂</li>
+                                    <li>k太大容易欠拟合，可能忽略局部特征，决策边界过于平滑</li>
+                                    <li>通常通过交叉验证选择最优k值</li>
+                                    <li>k值选择的经验法则：k ≈ √n（n为训练样本数），但需根据实际情况调整</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 距离度量方法：</span></p>
+                                <ul>
+                                    <li>欧氏距离：d(x,y) = √[Σ(x<sub>i</sub>-y<sub>i</sub>)²]，适用于连续特征</li>
+                                    <li>曼哈顿距离：d(x,y) = Σ|x<sub>i</sub>-y<sub>i</sub>|，对异常值较不敏感</li>
+                                    <li>闵可夫斯基距离：d(x,y) = [Σ|x<sub>i</sub>-y<sub>i</sub>|<sup>p</sup>]<sup>1/p</sup>，是前两者的泛化</li>
+                                    <li>汉明距离：用于二进制特征，计算不同位的数量</li>
+                                    <li>余弦距离：衡量向量夹角，常用于文本分类</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 变种方法：</span></p>
+                                <ul>
+                                    <li>剪辑最近邻法：从训练集中剔除那些"错误分类"的样本，提高分类精度</li>
+                                    <li>缩减最近邻法：逐步删除对分类无贡献的样本，减少存储需求</li>
+                                    <li>加权KNN：根据距离远近分配权重，距离越近权重越大</li>
+                                    <li>可辨识KNN：考虑每个邻居对分类的贡献度</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 优缺点分析：</span></p>
+                                <ul>
+                                    <li>优点：简单直观、无需训练过程、适用于多分类问题、对异常值相对鲁棒</li>
+                                    <li>缺点：计算复杂度高O(n)、存储开销大、对维度诅咒敏感、对不平衡数据敏感</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 改进方案：</span></p>
+                                <ul>
+                                    <li>数据预处理：标准化/归一化处理，避免某些特征因量级过大主导距离计算</li>
+                                    <li>降维：使用PCA等方法减少维度，缓解维度诅咒</li>
+                                    <li>索引结构：使用KD树、球树等数据结构加速最近邻搜索</li>
+                                    <li>原型选择：选择代表性的样本替代全部训练样本</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握KNN算法的基本原理和参数选择策略。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>k-NN方法中k取奇数是为了避免平局，k太小易过拟合，k太大易欠拟合，这是重要的参数选择原则。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在手写数字识别中，KNN通过比较待识别数字与训练集中最相似的k个样本进行分类。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>KNN是懒惰学习方法，训练阶段只是存储样本，分类时才进行计算。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="chapter4" class="content-container-wide">
+                    <h2 class="section-title">第四章 统计判决</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                4.1 最小误判概率准则
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 最小误判概率准则</span>是贝叶斯决策理论的基础，目标是最小化分类错误的概率。</p>
+                                <p>决策规则：若$P(\omega_i|x) > P(\omega_j|x) \forall j \neq i$，则将x判为$\omega_i$类</p>
+                                <p>后验概率：$P(\omega_i|x) = \frac{P(x|\omega_i)P(\omega_i)}{P(x)}$</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握贝叶斯决策理论的基本公式和最小误判概率准则的决策规则。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>最小误判概率准则是贝叶斯最优，目标是最小化总体误判概率。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在医学诊断中，根据症状出现的概率和疾病的先验概率计算后验概率，做出诊断决策。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>贝叶斯公式中P(x)通常是归一化常数，比较后验概率时只需比较$P(x|\omega_i)P(\omega_i)$即可。</p>
+                                                                
+                                                                <p><span style="color: red; font-weight: bold;">★ 与其它准则的比较：</span></p>
+                                                                <ul>
+                                                                    <li>最小误判概率准则：仅考虑误判概率，不考虑不同错误类型的代价</li>
+                                                                    <li>最小损失准则：考虑不同错误类型的代价差异</li>
+                                                                    <li>最小最大损失准则：适用于先验概率未知的情况</li>
+                                                                    <li>Neyman-Pearson准则：控制一类错误概率的同时最小化另一类错误概率</li>
+                                                                </ul>
+                                                                
+
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                4.2 最小损失准则判决
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 最小损失准则</span>考虑错分代价的决策方法，目标是最小化期望损失。</p>
+                                <p>条件风险：$R(\alpha_i|x) = \sum_i \lambda_{ij}P(\omega_j|x)$</p>
+                                <p>决策规则：选择使条件风险最小的决策$\alpha_i$</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握最小损失准则的决策规则和损失矩阵的概念。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>最小损失准则引入损失函数，最小化期望损失，与最小误判概率准则的区别在于考虑了不同错误类型的代价。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在癌症检测中，将健康者误诊为患癌的损失($\lambda_{21}$)与将患者误诊为健康的损失($\lambda_{12}$)可能不同。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>当各类错误的代价不同时，应使用最小损失准则而不是最小误判概率准则。</p>
+                                                                
+                                                                <p><span style="color: red; font-weight: bold;">★ 损失矩阵详解：</span></p>
+                                                                <p>对于两类问题，损失矩阵为：$\lambda = \begin{bmatrix} \lambda_{11} & \lambda_{12} \\ \lambda_{21} & \lambda_{22} \end{bmatrix}$</p>
+                                                                <ul>
+                                                                    <li>$\lambda_{11}$：真实为$\omega_1$类，判为$\omega_1$类的损失（正确分类，通常为0）</li>
+                                                                    <li>$\lambda_{12}$：真实为$\omega_1$类，判为$\omega_2$类的损失（第一类错误）</li>
+                                                                    <li>$\lambda_{21}$：真实为$\omega_2$类，判为$\omega_1$类的损失（第二类错误）</li>
+                                                                    <li>$\lambda_{22}$：真实为$\omega_2$类，判为$\omega_2$类的损失（正确分类，通常为0）</li>
+                                                                </ul>
+                                                                
+                                                                <p><span style="color: red; font-weight: bold;">★ 决策规则：</span></p>
+                                                                <p>对于两类问题，当$\lambda_{12}P(\omega_2|x) < \lambda_{21}P(\omega_1|x)$时，判为$\omega_1$类；否则判为$\omega_2$类。</p>
+                                                                
+                                                                <p><span style="color: red; font-weight: bold;">★ 实际应用例子：</span></p>
+                                                                <ul>
+                                                                    <li><strong>医学诊断</strong>：将癌症患者误诊为健康的损失($\lambda_{21}$)远大于将健康人误诊为癌症的损失($\lambda_{12}$)</li>
+                                                                    <li><strong>质量检测</strong>：将不合格产品误判为合格的损失远大于将合格产品误判为不合格的损失</li>
+                                                                    <li><strong>雷达检测</strong>：漏检敌机($\lambda_{21}$)的损失远大于虚警($\lambda_{12}$)的损失</li>
+                                                                    <li><strong>银行贷款</strong>：将坏客户误判为好客户的损失远大于将好客户误判为坏客户的损失</li>
+                                                                </ul>
+                                                                
+                                                                <p><span style="color: red; font-weight: bold;">★ 损失函数设计原则：</span></p>
+                                                                <ul>
+                                                                    <li>正确分类的损失通常设为0：$\lambda_{11} = \lambda_{22} = 0$</li>
+                                                                    <li>错误分类的损失为正值：$\lambda_{12} > 0, \lambda_{21} > 0$</li>
+                                                                    <li>在医学诊断中，$\lambda_{21}$（漏诊）通常远大于$\lambda_{12}$（误诊）</li>
+                                                                    <li>损失值的设定应反映实际应用场景中各类错误的真实代价</li>
+                                                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                4.3 最小最大损失准则
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 最小最大损失准则</span>是当先验概率不确定时的保守决策方法。</p>
+                                <p>目标是最小化最大可能的损失，适用于风险厌恶的决策场景。</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 数学原理：</span></p>
+                                <ul>
+                                    <li>当先验概率P(ω₁)和P(ω₂)未知或不确定时使用</li>
+                                    <li>决策目标：min max R(α<sub>i</sub>)，即在最坏情况下做出最好的决策</li>
+                                    <li>通过最大化风险函数求出临界先验概率P*(ω₁)</li>
+                                    <li>决策规则：当P(ω₁) > P*(ω₁)时选择α₁，否则选择α₂</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 决策步骤：</span></p>
+                                <ol>
+                                    <li>固定先验概率P(ω)，计算最优决策规则</li>
+                                    <li>计算对应的风险值R<sub>1</sub>和R<sub>2</sub></li>
+                                    <li>找到使R<sub>1</sub>=R<sub>2</sub>的临界点P*(ω)</li>
+                                    <li>选择使最大风险最小化的决策规则</li>
+                                </ol>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 适用场景：</span></p>
+                                <ul>
+                                    <li>先验概率未知或难以估计的情况</li>
+                                    <li>对风险极度厌恶的应用场景</li>
+                                    <li>安全关键系统（如航空、医疗设备）</li>
+                                    <li>军事决策（如导弹防御系统）</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解最小最大损失准则的适用场景和决策思路。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>最小最大损失准则是在最坏情况下最小化最大损失的稳健策略，适用于先验概率不确定时的保守决策方法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在投资决策中，当市场先验概率未知时，采用最小最大损失准则可以避免最坏情况的发生。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 做题技巧：</span>此准则适用于先验概率不确定或变化范围大的情况，是一种保守策略。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                4.4 Neyman-Pearson判决
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ Neyman-Pearson判决</span>：在限制一类错误概率的条件下最小化另一类错误概率。</p>
+                                <p>常用于信号检测和假设检验问题。</p>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 数学表述：</span></p>
+                                <ul>
+                                    <li>目标：最小化第二类错误概率P<sub>II</sub>（漏检概率）</li>
+                                    <li>约束条件：第一类错误概率P<sub>I</sub>（虚警概率）≤ α（预设阈值）</li>
+                                    <li>判决规则：若似然比$\frac{P(x|\omega_1)}{P(x|\omega_2)} \geq \beta$，则判为$\omega_1$类</li>
+                                    <li>其中β是根据约束条件P<sub>I</sub>≤α确定的阈值</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 判决步骤：</span></p>
+                                <ol>
+                                    <li>设定虚警概率的上限α</li>
+                                    <li>计算似然比$\frac{P(x|\omega_1)}{P(x|\omega_2)}$</li>
+                                    <li>确定阈值β，使得P<sub>I</sub> = P(似然比≥β | ω<sub>2</sub>) ≤ α</li>
+                                    <li>根据判决规则进行分类</li>
+                                </ol>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 适用场景：</span></p>
+                                <ul>
+                                    <li>雷达信号检测：控制虚警率，同时最大化检测概率</li>
+                                    <li>医学检测：控制漏诊率，避免漏诊严重疾病</li>
+                                    <li>质量控制：控制不合格品流入下工序的概率</li>
+                                    <li>通信系统：在信噪比低的情况下检测信号</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 与其它准则的比较：</span></p>
+                                <ul>
+                                    <li>最小误判概率准则：不考虑错误类型的代价差异</li>
+                                    <li>最小损失准则：需要知道先验概率和损失矩阵</li>
+                                    <li>最小最大损失准则：适用于先验概率未知的情况</li>
+                                    <li>Neyman-Pearson准则：适用于两类错误代价不对称且需控制某类错误概率的情况</li>
+                                </ul>
+                                
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>掌握Neyman-Pearson判决的基本思想和应用场景。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>Neyman-Pearson判决是在限制一类错误概率的条件下最小化另一类错误概率，适用于两类错误代价不对称的情况。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在雷达信号检测中，控制虚警率不超过某个阈值，同时最大化检测概率。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>Neyman-Pearson判决适用于两类错误代价不对称的情况，如质量检测、医疗诊断等。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+                <div id="chapter-other" class="content-container-wide">
+                    <h2 class="section-title">其他重要知识点</h2>
+                    <ul class="topic-list">
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                谱系聚类（层次聚类）
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 谱系聚类</span>也称为层次聚类，是逐步合并或分裂样本形成树状结构（Dendrogram）的聚类方法。</p>
+                                <p>主要特点：</p>
+                                <ul>
+                                    <li>分为凝聚型（自底向上）和分裂型（自顶向下）</li>
+                                    <li>适用于小规模数据集</li>
+                                    <li>可以形成层次结构，便于理解数据的层级关系</li>
+                                </ul>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解谱系聚类的原理和特点，了解其与其他聚类方法的区别。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>谱系聚类逐步合并或分裂样本形成树状结构（Dendrogram），分为凝聚型（自底向上）和分裂型（自顶向下），适用于小规模数据集。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>在生物分类学中，构建物种进化树就是一种谱系聚类的应用。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>谱系聚类能够提供数据的层次结构信息，但在大规模数据集上计算复杂度较高。</p>
+                            </div>
+                        </li>
+                        
+                        <li class="topic-item">
+                            <div class="topic-title">
+                                黑天鹅、免费午餐定理、最小描述长度原理
+                                <div class="toggle-icon"></div>
+                            </div>
+                            <div class="topic-content">
+                                <p><span style="color: red; font-weight: bold;">★ 黑天鹅</span>：指不可预测的重大事件，提醒模型需具备泛化能力。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 免费午餐定理</span>：没有一种算法在所有问题上都表现最好。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 最小描述长度（MDL）</span>：选择能用最短编码描述数据和模型的方案。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 考试重点：</span>理解这些原理的含义及其在模式识别中的意义。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 老师强调：</span>黑天鹅提醒模型需具备泛化能力，免费午餐定理说明没有一种算法在所有问题上都表现最好，最小描述长度（MDL）选择能用最短编码描述数据和模型的方案。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 示例：</span>免费午餐定理表明我们需要根据具体问题选择合适的算法，而不是寻找万能算法。</p>
+                                <p><span style="color: red; font-weight: bold;">★ 学习提示：</span>这些原理提供了算法选择和模型评估的理论基础。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-content">&copy; 2026 模式识别备考网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out'
+        });
+        
+        // 回到顶部按钮
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+    <button id="backToTop" onclick="scrollToTop()" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>

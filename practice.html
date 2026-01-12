@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微助教习题库 - 模式识别备考网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="lib/polyfill.js"></script>
+    <script src="lib/mathjax-config.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="lib/mathjax-loader.js"></script>
+</head>
+<body>
+    <div class="decorative-circle decorative-circle-1"></div>
+    <div class="decorative-circle decorative-circle-2"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">微助教习题库</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="knowledge_distribution.html" class="nav-link">知识点分布</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="practice.html" class="nav-link active">练习题库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mock_test.html" class="nav-link">模拟测试</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chapters-section">
+            <div class="container">
+                <h2 class="section-title">微助教习题库</h2>
+                
+                <!-- 章节选择 -->
+                <div class="chapters-grid" style="margin-bottom: 3rem;">
+                    <div class="chapter-card">
+                        <div class="chapter-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="chapter-title">第一章 绪论</h3>
+                        <p class="chapter-desc">模式识别基本概念</p>
+                        <a href="#chapter1" class="chapter-link">开始练习</a>
+                    </div>
+                    
+                    <div class="chapter-card">
+                        <div class="chapter-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="chapter-title">第二章 聚类分析</h3>
+                        <p class="chapter-desc">无监督学习方法</p>
+                        <a href="#chapter2" class="chapter-link">开始练习</a>
+                    </div>
+                    
+                    <div class="chapter-card">
+                        <div class="chapter-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="chapter-title">第三章 判别域代数界面方程法</h3>
+                        <p class="chapter-desc">线性判别函数</p>
+                        <a href="#chapter3" class="chapter-link">开始练习</a>
+                    </div>
+                </div>
+                
+                <!-- 第一章习题 -->
+                <div id="chapter1" class="quiz-container">
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 2rem; font-size: 2rem;">
+                        <i class="fas fa-star"></i> 第一章：绪论 - 练习题
+                    </h3>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1001（第1题） 下列哪一项不属于模式识别的典型应用？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q1" value="A"> A. 遥感图像判读
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q1" value="B"> B. 生物特征识别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q1" value="C"> C. 股票价格预测
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q1" value="D"> D. 文字语言识别
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 股票价格预测<br>
+                            <strong>解析：</strong>模式识别的典型应用包括<strong style="color: red;">遥感图像判读</strong>、<strong style="color: red;">生物特征识别</strong>、<strong style="color: red;">文字语言识别</strong>等，而股票价格预测更多属于时间序列预测或金融分析领域，不属典型的模式识别应用。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>模式识别应用领域
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1002（第2题） 在模式识别系统的流程中，核心问题包括：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q2" value="A"> A. 用户交互、界面美化、系统集成
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q2" value="B"> B. 特征提取与选择、学习训练、分类识别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q2" value="C"> C. 数据采集、传感器设计、硬件制造
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q2" value="D"> D. 信号增强、滤波降噪、硬件接口
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>B. 特征提取与选择、学习训练、分类识别<br>
+                            <strong>解析：</strong>模式识别系统的核心问题是<strong style="color: red;">特征提取与选择</strong>、<strong style="color: red;">学习训练</strong>、<strong style="color: red;">分类识别</strong>，这些构成了模式识别的基本流程。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>模式识别系统核心问题
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1003（第3题） 模式识别的过程可理解为：从物理空间 → 特征空间 → ______
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q3" value="A"> A. 训练空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q3" value="B"> B. 数据空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q3" value="C"> C. 类别空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q3" value="D"> D. 参数空间
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 类别空间<br>
+                            <strong>解析：</strong>模式识别的过程通常是从<strong style="color: red;">物理空间</strong>到<strong style="color: red;">特征空间</strong>再到<strong style="color: red;">类别空间</strong>的映射过程，即从原始数据提取特征，最后归类到相应类别。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>模式识别过程
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1004（第4题） 下列哪种情况体现了"预处理"的作用？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q4" value="A"> A. 将数据标签打乱重新排列
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q4" value="B"> B. 在训练集中随机增加样本
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q4" value="C"> C. 在训练前选择最优分类器
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q4" value="D"> D. 把非线性模式转化为线性模式
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 把非线性模式转化为线性模式<br>
+                            <strong>解析：</strong>预处理是模式识别的重要步骤，目的是改善数据质量，<strong style="color: red;">把非线性模式转化为线性模式</strong>是预处理的一种方式，使问题更容易处理。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>预处理作用
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1005（第5题） 统计模式识别的主要特点是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q5" value="A"> A. 利用对象的结构关系进行句法分析
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q5" value="B"> B. 利用模糊隶属度和模糊推理分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q5" value="C"> C. 直接或隐含利用概率分布特征进行分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q5" value="D"> D. 使用神经网络自学习、自组织能力
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 直接或隐含利用概率分布特征进行分类<br>
+                            <strong>解析：</strong><strong style="color: red;">统计模式识别</strong>的主要特点是利用统计学原理，<strong style="color: red;">直接或隐含利用概率分布特征</strong>进行分类决策。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>统计模式识别特点
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1006（第6题） 结构模式识别的基本思想是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q6" value="A"> A. 利用训练样本的统计分布进行建模
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q6" value="B"> B. 将对象分解为基元，并分析基元之间的结构关系
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q6" value="C"> C. 将模式类作为模糊集，通过隶属函数分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q6" value="D"> D. 使用神经网络进行特征提取
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>B. 将对象分解为基元，并分析基元之间的结构关系<br>
+                            <strong>解析：</strong><strong style="color: red;">结构模式识别</strong>的基本思想是将复杂的对象分解为简单的<strong style="color: red;">基元</strong>，并分析这些基元之间的<strong style="color: red;">结构关系</strong>进行识别。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>结构模式识别思想
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1007（第7题） 下列哪项说法符合模糊模式识别的特点？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q7" value="A"> A. 将模式看作模糊集，用隶属度表示属性
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q7" value="B"> B. 必须在大规模数据上训练神经元网络
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q7" value="C"> C. 强调统计分布与后验概率
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q7" value="D"> D. 基于文法规则进行句法分析
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 将模式看作模糊集，用隶属度表示属性<br>
+                            <strong>解析：</strong><strong style="color: red;">模糊模式识别</strong>的特点是将模式看作<strong style="color: red;">模糊集</strong>，用<strong style="color: red;">隶属度</strong>来表示模式的属性，处理不确定性问题。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>模糊模式识别特点
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1008（第8题） 下列哪一种方法不是课件中提到的模式识别主流方法？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q8" value="A"> A. 子空间法
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q8" value="B"> B. 统计模式识别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q8" value="C"> C. 模糊模式识别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q8" value="D"> D. 遗传算法模式识别
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 遗传算法模式识别<br>
+                            <strong>解析：</strong>模式识别的主流方法包括<strong style="color: red;">子空间法</strong>、<strong style="color: red;">统计模式识别</strong>、<strong style="color: red;">模糊模式识别</strong>等，而<strong style="color: red;">遗传算法</strong>虽然可用于优化，但不是主流的模式识别方法。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>模式识别主流方法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1009（第9题） "没有免费午餐定理"在模式识别中的含义是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q9" value="A"> A. 最优算法只存在于统计模式识别方法中
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q9" value="B"> B. 在所有问题上，没有一个算法能始终优于其他算法
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q9" value="C"> C. 任何模式都可以由同一分类器完美识别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q9" value="D"> D. 模式识别无需额外代价，任何算法都可适用
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>B. 在所有问题上，没有一个算法能始终优于其他算法<br>
+                            <strong>解析：</strong><strong style="color: red;">没有免费午餐定理</strong>表明，在所有可能的问题上，没有一个算法能够始终表现优于其他算法，这意味着需要根据具体问题选择合适的算法。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>没有免费午餐定理
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T1010（第10题） 在模式识别系统中，以下哪个步骤通常最先进行？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch1_q10" value="A"> A. 特征提取
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q10" value="B"> B. 数据预处理
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q10" value="C"> C. 分类器设计
+                            </label>
+                            <label>
+                                <input type="radio" name="ch1_q10" value="D"> D. 模式采集
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 模式采集<br>
+                            <strong>解析：</strong>模式识别的流程通常从<strong style="color: red;">模式采集</strong>开始，然后是<strong style="color: red;">数据预处理</strong>、<strong style="color: red;">特征提取</strong>、<strong style="color: red;">分类器设计</strong>等步骤。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>模式识别流程
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button class="btn-primary" onclick="checkAnswers()">
+                            <i class="fas fa-check"></i> 检查答案
+                        </button>
+                        <button class="btn-secondary" onclick="showAllAnswers()">
+                            <i class="fas fa-eye"></i> 显示答案
+                        </button>
+                        <button class="btn-primary" onclick="clearAnswers()">
+                            <i class="fas fa-broom"></i> 清空答案
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 第二章习题 -->
+                <div id="chapter2" class="quiz-container" style="margin-top: 3rem;">
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 2rem; font-size: 2rem;">
+                        <i class="fas fa-star"></i> 第二章：聚类分析 - 练习题
+                    </h3>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2001（第11题） "丑小鸭定理"告诉我们：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q1" value="A"> A. 不同对象总是彼此差异明显
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q1" value="B"> B. 先验知识对分类无关紧要
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q1" value="C"> C. 最优模型必须同时考虑复杂度和拟合度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q1" value="D"> D. 如果没有先验知识，所有对象在相似性上是相同的
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 如果没有先验知识，所有对象在相似性上是相同的<br>
+                            <strong>解析：</strong><strong style="color: red;">丑小鸭定理</strong>指出，在没有先验知识的情况下，无法区分一个对象与其他对象的关系，即所有对象在相似性上是相同的，强调了先验知识的重要性。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>聚类分析基础概念
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2002（第12题） 聚类分析的基本思想是什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q2" value="A"> A. 将不同类别的样本混合处理
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q2" value="B"> B. 将相似的样本归为一类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q2" value="C"> C. 对每个样本赋予唯一标签
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q2" value="D"> D. 依据专家经验划分数据
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>B. 将相似的样本归为一类<br>
+                            <strong>解析：</strong><strong style="color: red;">聚类分析</strong>的基本思想是将数据集中的样本按照某种相似性度量划分为若干个组，使得<strong style="color: red;">同类内样本相似</strong>、<strong style="color: red;">异类间样本相异</strong>。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>聚类分析基本思想
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2003（第13题） 聚类分析中的特征量不包括以下哪种类型？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q3" value="A"> A. 物理量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q3" value="B"> B. 名义量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q3" value="C"> C. 图像量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q3" value="D"> D. 次序量
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 图像量<br>
+                            <strong>解析：</strong>聚类分析中的特征量通常包括<strong style="color: red;">物理量</strong>(连续数值)、<strong style="color: red;">名义量</strong>(无序分类)、<strong style="color: red;">次序量</strong>(有序分类)等，但不包括图像量这种特殊的复杂数据类型。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>聚类分析特征量类型
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2004（第14题） 哪种距离计算公式是基于欧几里得距离的？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q4" value="A"> A. 明氏距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q4" value="B"> B. 切比雪夫距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q4" value="C"> C. 马氏距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q4" value="D"> D. 曼哈顿距离
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 明氏距离<br>
+                            <strong>解析：</strong><strong style="color: red;">明氏距离</strong>(闵可夫斯基距离)是一类距离的统称，当参数p=2时即为<strong style="color: red;">欧几里得距离</strong>，是最常用的距离度量方法。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>距离测度
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2005（第15题） 马氏距离的一个重要性质是什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q5" value="A"> A. 不受坐标变换影响
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q5" value="B"> B. 只对平移不变
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q5" value="C"> C. 对所有线性变换都不变
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q5" value="D"> D. 不考虑数据的相关性
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 对所有线性变换都不变<br>
+                            <strong>解析：</strong><strong style="color: red;">马氏距离</strong>的一个重要性质是它对<strong style="color: red;">所有线性变换都不变</strong>，这使得它在处理不同尺度和相关性的数据时具有优势，因为它考虑了数据的协方差结构。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>马氏距离性质
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2006（第16题） 在聚类分析中，选择合适的距离测度对结果的影响如何？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q6" value="A"> A. 没有影响
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q6" value="B"> B. 距离测度不影响分类效果
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q6" value="C"> C. 只能影响数据的排序
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q6" value="D"> D. 距离测度选取不当会导致错误分类
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 距离测度选取不当会导致错误分类<br>
+                            <strong>解析：</strong>在聚类分析中，<strong style="color: red;">距离测度的选择至关重要</strong>，直接影响样本间相似性的判断，距离测度选取不当会严重影响聚类结果的准确性。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>距离测度选择
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2007（第17题） 以下哪种情况不会导致聚类分类效果无效？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q7" value="A"> A. 合理的特征选择
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q7" value="B"> B. 量纲选取不当
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q7" value="C"> C. 特征选取不当
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q7" value="D"> D. 特征选取过多
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 合理的特征选择<br>
+                            <strong>解析：</strong><strong style="color: red;">合理的特征选择</strong>有助于提高聚类效果，而<strong style="color: red;">量纲选取不当</strong>、<strong style="color: red;">特征选取不当</strong>、<strong style="color: red;">特征选取过多</strong>等问题都会导致聚类效果不佳。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>聚类效果影响因素
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2008（第18题） 在最大最小距离算法中，如何选择新的聚类中心？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q8" value="A"> A. 选择离所有其他模式最远的模式
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q8" value="B"> B. 选择距离最小的模式
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q8" value="C"> C. 选择与当前聚类中心距离最远的模式
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q8" value="D"> D. 选择与所有其他聚类的距离最小的模式
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 选择与当前聚类中心距离最远的模式<br>
+                            <strong>解析：</strong>在<strong style="color: red;">最大最小距离算法</strong>中，新的聚类中心是选择与当前所有聚类中心的<strong style="color: red;">最小距离</strong>达到<strong style="color: red;">最大值</strong>的那个模式，即选择距离当前聚类中心最远的模式。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>最大最小距离算法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2009（第19题） 简单聚类算法的主要特点是什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q9" value="A"> A. 聚类中心不断修正，类别随时调整
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q9" value="B"> B. 聚类过程中，类心一旦确定将不会改变
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q9" value="C"> C. 聚类算法使用多层神经网络进行训练
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q9" value="D"> D. 聚类过程中使用梯度下降法优化
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>B. 聚类过程中，类心一旦确定将不会改变<br>
+                            <strong>解析：</strong><strong style="color: red;">简单聚类算法</strong>的主要特点是预先确定聚类中心，然后将样本分配给最近的聚类中心，<strong style="color: red;">聚类中心在过程中不改变</strong>，这是与K-Means等算法的主要区别。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>简单聚类算法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2010（第20题） 在简单聚类方法中，聚类过程依赖于哪个关键因素？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q10" value="A"> A. 距离门限T的选取
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q10" value="B"> B. 类心的初始化方式
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q10" value="C"> C. 样本的数量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q10" value="D"> D. 聚类算法的复杂度
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 距离门限T的选取<br>
+                            <strong>解析：</strong>在简单聚类方法中，<strong style="color: red;">距离门限T</strong>是决定样本是否被归入某一类的关键参数，它的选取直接影响聚类结果，是聚类过程中的核心参数。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>简单聚类方法关键因素
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2012（第21题） 谱系聚类法在合并类时是基于什么标准？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q11" value="A"> A. 合并后类内距离最小
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q11" value="B"> B. 合并后类间距离最大
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q11" value="C"> C. 合并后总类内离散度最小
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q11" value="D"> D. 合并后样本数量最多
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 合并后总类内离散度最小<br>
+                            <strong>解析：</strong><strong style="color: red;">谱系聚类法</strong>在合并类时，选择使<strong style="color: red;">总类内离散度</strong>增加最少的两个类进行合并，这样可以保持聚类结果的紧密性。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>谱系聚类法合并标准
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2013（第22题） 在C均值法中，聚类过程的主要目标是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q12" value="A"> A. 最小化类间距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q12" value="B"> B. 最大化类内距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q12" value="C"> C. 最小化所有样本到其类心的平方误差和
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q12" value="D"> D. 最大化类的数量
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 最小化所有样本到其类心的平方误差和<br>
+                            <strong>解析：</strong><strong style="color: red;">C均值法</strong>（K-Means算法）的主要目标是最小化<strong style="color: red;">准则函数</strong>J，即最小化所有样本到其所属类心的<strong style="color: red;">平方误差和</strong>，从而获得紧凑的聚类。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>C均值法目标函数
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2014（第23题） 在C均值法中，如果类心发生变化，算法应该：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q13" value="A"> A. 立即终止迭代
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q13" value="B"> B. 重新初始化所有样本标签
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q13" value="C"> C. 继续迭代直到类心不再变化
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q13" value="D"> D. 随机选择新的类心
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 继续迭代直到类心不再变化<br>
+                            <strong>解析：</strong>在<strong style="color: red;">C均值法</strong>中，算法是一个迭代优化过程，当类心发生变化时，需要<strong style="color: red;">继续迭代</strong>，重复分配样本和更新类心的步骤，直到满足收敛条件（类心不再变化或变化很小）。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>C均值法迭代过程
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T2015（第24题） 在无监督学习中，聚类算法主要应用于以下哪个场景？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch2_q14" value="A"> A. 有标签数据分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q14" value="B"> B. 模型的训练与测试
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q14" value="C"> C. 数据加密
+                            </label>
+                            <label>
+                                <input type="radio" name="ch2_q14" value="D"> D. 数据压缩
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 数据压缩<br>
+                            <strong>解析：</strong>聚类算法属于<strong style="color: red;">无监督学习</strong>，主要用于探索数据的内在结构，如<strong style="color: red;">数据压缩</strong>、数据挖掘、模式识别等场景，它不需要标签数据即可发现数据的潜在类别。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>无监督学习应用
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button class="btn-primary" onclick="checkAnswers()">
+                            <i class="fas fa-check"></i> 检查答案
+                        </button>
+                        <button class="btn-secondary" onclick="showAllAnswers()">
+                            <i class="fas fa-eye"></i> 显示答案
+                        </button>
+                        <button class="btn-primary" onclick="clearAnswers()">
+                            <i class="fas fa-broom"></i> 清空答案
+                        </button>
+                    </div>
+                <!-- 第三章习题 -->
+                <div id="chapter3" class="quiz-container" style="margin-top: 3rem;">
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 2rem; font-size: 2rem;">
+                        <i class="fas fa-star"></i> 第三章：判别域代数界面方程法 - 练习题
+                    </h3>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3001（第25题） 判别函数的基本概念是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q1" value="A"> A. 用于计算样本之间距离的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="B"> B. 用于对样本进行聚类的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="C"> C. 用于区分不同类别样本的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="D"> D. 用于生成新样本的函数
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 用于区分不同类别样本的函数<br>
+                            <strong>解析：</strong><strong style="color: red;">判别函数</strong>是模式识别中用于<strong style="color: red;">区分不同类别样本</strong>的函数，它通过计算样本的函数值来决定样本所属的类别。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>判别函数基本概念
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3002（第26题） 判别函数的几何意义是什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q2" value="A"> A. 判别函数的值表示数据点与判别平面的距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="B"> B. 判别函数的值表示数据点到超平面的角度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="C"> C. 判别函数的值表示数据点的类别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="D"> D. 判别函数的值表示数据点在平面上的位置
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 判别函数的值表示数据点与判别平面的距离<br>
+                            <strong>解析：</strong>判别函数的几何意义在于，其函数值的<strong style="color: red;">正负</strong>表示数据点位于判别超平面的哪一侧，其<strong style="color: red;">绝对值</strong>表示数据点到判别平面的相对距离。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>判别函数几何意义
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3005（第29题） Fisher准则函数的最大化目标是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q3" value="A"> A. 最大化类内离散度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="B"> B. 最小化类间离散度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="C"> C. 最大化类间离散度与类内离散度的比值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="D"> D. 最小化总样本方差
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 最大化类间离散度与类内离散度的比值<br>
+                            <strong>解析：</strong><strong style="color: red;">Fisher准则函数</strong>的目标是最大化<strong style="color: red;">类间离散度</strong>与<strong style="color: red;">类内离散度</strong>的比值，即 J = (m₂ - m₁)² / (s₁² + s₂²)，实现类间距离最大、类内距离最小。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>Fisher准则
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3009（第33题） 在感知器算法中，增广权矢量的初始值通常是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q4" value="A"> A. 任意大值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="B"> B. 任意小值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="C"> C. 任意较小的任意值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="D"> D. 0
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 0<br>
+                            <strong>解析：</strong>在<strong style="color: red;">感知器算法</strong>中，增广权矢量的初始值通常设置为<strong style="color: red;">零向量</strong>，然后根据训练样本逐步调整权矢量的值。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>感知器算法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3001（第25题） 判别函数的基本概念是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q1" value="A"> A. 用于计算样本之间距离的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="B"> B. 用于对样本进行聚类的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="C"> C. 用于区分不同类别样本的函数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q1" value="D"> D. 用于生成新样本的函数
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 用于区分不同类别样本的函数<br>
+                            <strong>解析：</strong><strong style="color: red;">判别函数</strong>是模式识别中用于<strong style="color: red;">区分不同类别样本</strong>的函数，它通过计算样本的函数值来决定样本所属的类别。<br>
+                            <strong>难度：</strong>★☆☆☆☆ <strong>知识点：</strong>判别函数基本概念
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3002（第26题） 判别函数的几何意义是什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q2" value="A"> A. 判别函数的值表示数据点与判别平面的距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="B"> B. 判别函数的值表示数据点到超平面的角度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="C"> C. 判别函数的值表示数据点的类别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q2" value="D"> D. 判别函数的值表示数据点在平面上的位置
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 判别函数的值表示数据点与判别平面的距离<br>
+                            <strong>解析：</strong>判别函数的几何意义在于，其函数值的<strong style="color: red;">正负</strong>表示数据点位于判别超平面的哪一侧，其<strong style="color: red;">绝对值</strong>表示数据点到判别平面的相对距离。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>判别函数几何意义
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3005（第29题） Fisher准则函数的最大化目标是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q3" value="A"> A. 最大化类内离散度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="B"> B. 最小化类间离散度
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="C"> C. 最大化类间离散度与类内离散度的比值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q3" value="D"> D. 最小化总样本方差
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 最大化类间离散度与类内离散度的比值<br>
+                            <strong>解析：</strong><strong style="color: red;">Fisher准则函数</strong>的目标是最大化<strong style="color: red;">类间离散度</strong>与<strong style="color: red;">类内离散度</strong>的比值，即 J = (m₂ - m₁)² / (s₁² + s₂²)，实现类间距离最大、类内距离最小。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>Fisher准则
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3006（第30题） Fisher线性判别方法的判别规则是基于什么值来判断样本属于哪个类别？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q4" value="A"> A. 样本到各类心的欧氏距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="B"> B. 投影后与各类投影均值的距离
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="C"> C. 判别函数输出值的符号或大小
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q4" value="D"> D. 样本的原始特征值之和
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 判别函数输出值的符号或大小<br>
+                            <strong>解析：</strong>在<strong style="color: red;">Fisher线性判别</strong>方法中，通过计算样本的判别函数值，根据函数输出值的<strong style="color: red;">符号或大小</strong>与阈值比较来决定样本的类别归属。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>Fisher线性判别规则
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3007（第31题） 对于二维数据，Fisher线性判别可以将数据投影到多少维空间？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q5" value="A"> A. 一维空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q5" value="B"> B. 二维空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q5" value="C"> C. 三维空间
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q5" value="D"> D. 无限维空间
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 一维空间<br>
+                            <strong>解析：</strong>对于C类分类问题，Fisher线性判别通常将d维特征空间投影到<strong style="color: red;">C-1维</strong>空间，在二类问题中即为<strong style="color: red;">一维空间</strong>，便于分类。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>Fisher线性判别投影维度
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3008（第32题） 在Fisher线性判别中，优化问题通过以下哪个操作求解？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q6" value="A"> A. 求解特征值和特征向量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q6" value="B"> B. 通过梯度下降法求解
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q6" value="C"> C. 使用支持向量机优化
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q6" value="D"> D. 直接求解最小二乘问题
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 求解特征值和特征向量<br>
+                            <strong>解析：</strong>在<strong style="color: red;">Fisher线性判别</strong>中，优化问题转化为求解广义特征值问题<strong style="color: red;">S_b w = λS_w w</strong>，通过求解<strong style="color: red;">特征值和特征向量</strong>得到最佳投影方向。<br>
+                            <strong>难度：</strong>★★★★☆ <strong>知识点：</strong>Fisher线性判别求解方法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3009（第33题） 在感知器算法中，增广权矢量的初始值通常是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q7" value="A"> A. 任意大值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q7" value="B"> B. 任意小值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q7" value="C"> C. 任意较小的任意值
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q7" value="D"> D. 0
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>D. 0<br>
+                            <strong>解析：</strong>在<strong style="color: red;">感知器算法</strong>中，增广权矢量的初始值通常设置为<strong style="color: red;">零向量</strong>，然后根据训练样本逐步调整权矢量的值。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>感知器算法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3010（第34题） 感知器算法的核心思想是：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q8" value="A"> A. 通过最小化判别函数值的绝对值来进行分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q8" value="B"> B. 使用梯度下降法调整权矢量
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q8" value="C"> C. 用训练样本校验初始或迭代中的增广权矢量的合理性
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q8" value="D"> D. 通过网络训练来计算类间离差
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 用训练样本校验初始或迭代中的增广权矢量的合理性<br>
+                            <strong>解析：</strong><strong style="color: red;">感知器算法</strong>的核心思想是用训练样本对初始或迭代中的<strong style="color: red;">增广权矢量</strong>进行校验，对于误分类样本调整权矢量，直到所有样本正确分类。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>感知器算法核心
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3011（第35题） 在感知器算法中，若一个训练样本被正确分类，算法会：
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q9" value="A"> A. 立即停止训练
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q9" value="B"> B. 对权矢量进行修正
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q9" value="C"> C. 不对权矢量进行任何修改
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q9" value="D"> D. 继续修改训练样本
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 不对权矢量进行任何修改<br>
+                            <strong>解析：</strong>在<strong style="color: red;">感知器算法</strong>中，只有当样本被<strong style="color: red;">误分类</strong>时才会对权矢量进行调整，如果样本被正确分类，则不对权矢量进行任何修改，继续处理下一个样本。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>感知器算法流程
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3013（第37题） K-NN方法中，k的值决定了什么？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q10" value="A"> A. 分类时参考的样本数
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q10" value="B"> B. 距离计算的标准
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q10" value="C"> C. 分类过程中所使用的学习算法
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q10" value="D"> D. 判别函数的构造方式
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 分类时参考的样本数<br>
+                            <strong>解析：</strong>在<strong style="color: red;">K-NN方法</strong>中，k值决定了分类时参考的<strong style="color: red;">最近邻样本数</strong>，即对于待分类样本，找出训练集中距离最近的k个样本，根据这k个样本的类别进行投票决定待分类样本的类别。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>K-NN方法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3014（第38题） 在K-NN方法中，如何确定未知样本的分类？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q11" value="A"> A. 根据最近邻的最大类别
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q11" value="B"> B. 根据距离的平方和决定
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q11" value="C"> C. 根据每个样本的均值进行分类
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q11" value="D"> D. 根据测试集的样本分布进行分类
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>A. 根据最近邻的最大类别<br>
+                            <strong>解析：</strong>在<strong style="color: red;">K-NN方法</strong>中，确定未知样本分类的方法是统计其k个最近邻样本中各类别的数量，将未知样本归入<strong style="color: red;">数量最多的类别</strong>。<br>
+                            <strong>难度：</strong>★★☆☆☆ <strong>知识点：</strong>K-NN分类方法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            T3015（第39题） 在剪辑最近邻方法中，如何定义剪辑样本集？
+                        </div>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="ch3_q12" value="A"> A. 剪辑样本集是所有训练样本的集合
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q12" value="B"> B. 剪辑样本集是被正确分类的样本
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q12" value="C"> C. 剪辑样本集是根据误分类样本构建的
+                            </label>
+                            <label>
+                                <input type="radio" name="ch3_q12" value="D"> D. 剪辑样本集是通过增加新样本构建的
+                            </label>
+                        </div>
+                        <div class="quiz-answer">
+                            <strong>答案：</strong>C. 剪辑样本集是根据误分类样本构建的<br>
+                            <strong>解析：</strong>在<strong style="color: red;">剪辑最近邻方法</strong>中，<strong style="color: red;">剪辑样本集</strong>是通过剔除那些容易引起误分类的样本而构建的，保留分类边界附近的代表性样本，以提高分类效率和准确性。<br>
+                            <strong>难度：</strong>★★★☆☆ <strong>知识点：</strong>剪辑最近邻方法
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            题1（第40题） 设正细胞属于ω₁类，异常细胞属于ω₂类，它们的先验概率分别为P(ω₁) = 0.9, P(ω₂) = 0.1。现在有一个待识别细胞，其观察特征值为x，从类条件概率密度曲线中查得p(x|ω₁) = 0.2, p(x|ω₂) = 0.4。如果损失系数为λ₁ = 0, λ₂ = 1, λ₃ = 6, λ₄ = 0，请尝试根据以下两种方法进行分类：1. 基于最小误判概率准则的贝叶斯判决；2. 基于最小损失准则的贝叶斯判决。并请分析两种分类结果的异同和原因。
+                        </div>
+                        <div class="quiz-answer" style="display: block;">
+                            <strong>解题思路与提示：</strong>本题考察贝叶斯决策理论的两个重要准则，需分别计算后验概率和条件风险进行判断。<br><br>
+                            <strong>答案：</strong>完整计算过程：<br>
+                            <strong>1. 最小误判概率准则：</strong><br>
+                            根据贝叶斯公式计算后验概率：<br>
+                            \[P(\omega_1|x) = \frac{p(x|\omega_1)P(\omega_1)}{p(x)} = \frac{0.2 \times 0.9}{p(x)} = \frac{0.18}{p(x)}\]<br>
+                            \[P(\omega_2|x) = \frac{p(x|\omega_2)P(\omega_2)}{p(x)} = \frac{0.4 \times 0.1}{p(x)} = \frac{0.04}{p(x)}\]<br>
+                            其中 \[p(x) = p(x|\omega_1)P(\omega_1) + p(x|\omega_2)P(\omega_2) = 0.2 \times 0.9 + 0.4 \times 0.1 = 0.18 + 0.04 = 0.22\]<br>
+                            所以 \[P(\omega_1|x) = \frac{0.18}{0.22} = \frac{9}{11} \approx 0.818\]<br>
+                            \[P(\omega_2|x) = \frac{0.04}{0.22} = \frac{2}{11} \approx 0.182\]<br>
+                            因为 \(P(\omega_1|x) > P(\omega_2|x)\)，所以按最小误判概率准则，应将样本\(x\)判为\(\omega_1\)类。<br><br>
+                            <strong>2. 最小损失准则：</strong><br>
+                            根据损失系数矩阵，条件风险为：<br>
+                            \[R(\alpha_1|x) = \lambda_{11}P(\omega_1|x) + \lambda_{12}P(\omega_2|x) = 0 \times \frac{9}{11} + 1 \times \frac{2}{11} = \frac{2}{11}\]<br>
+                            \[R(\alpha_2|x) = \lambda_{21}P(\omega_1|x) + \lambda_{22}P(\omega_2|x) = 6 \times \frac{9}{11} + 0 \times \frac{2}{11} = \frac{54}{11}\]<br>
+                            因为 \(R(\alpha_1|x) < R(\alpha_2|x)\)，所以按最小损失准则，应将样本\(x\)判为\(\omega_1\)类。<br><br>
+                            <strong>结论：</strong>两种准则都判决样本\(x\)属于\(\omega_1\)类，但原因不同。最小误判概率准则基于后验概率大小，最小损失准则基于条件风险大小。<br>
+                            <strong>解析：</strong>本题考察<strong style="color: red;">贝叶斯决策理论</strong>的应用。先验概率\(P(\omega_1)=0.9\)、\(P(\omega_2)=0.1\)，类条件概率\(p(x|\omega_1)=0.2\)、\(p(x|\omega_2)=0.4\)。根据贝叶斯公式计算后验概率，再根据不同准则进行决策。<br>
+                            <strong>难度：</strong>★★★★★ <strong>知识点：</strong>贝叶斯决策理论
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            题2（第41题） 设有两类样本ω₁和ω₂，它们的训练样本分别是X₁ = {(2,3), (3,4), (4,5)}和X₂ = {(6,7), (7,8), (8,9)}。请按Fisher判别方法求解以下问题：1. 计算两类样本的均值矢量m₁和m₂。2. 计算总类内离差阵S_W。
+                        </div>
+                        <div class="quiz-answer" style="display: block;">
+                            <strong>解题思路与提示：</strong>本题考察Fisher判别方法的基本计算步骤，包括均值矢量计算和类内离差阵计算。计算时注意向量运算和矩阵运算的规则，以及Fisher判别方法的目标是最大化类间距离、最小化类内距离。<br><br>
+                            <strong>答案：</strong>完整计算过程：<br>
+                            <strong>1. 计算两类样本的均值矢量：</strong><br>
+                            对于\(\omega_1\)类：\(X_1 = \{(2,3), (3,4), (4,5)\}\)<br>
+                            \[\mathbf{m}_1 = \frac{1}{3}[(2,3)^T + (3,4)^T + (4,5)^T] = \frac{1}{3}[(9,12)^T] = \begin{bmatrix} 3 \\ 4 \end{bmatrix}\]<br><br>
+                            对于\(\omega_2\)类：\(X_2 = \{(6,7), (7,8), (8,9)\}\)<br>
+                            \[\mathbf{m}_2 = \frac{1}{3}[(6,7)^T + (7,8)^T + (8,9)^T] = \frac{1}{3}[(21,24)^T] = \begin{bmatrix} 7 \\ 8 \end{bmatrix}\]<br><br>
+                            <strong>2. 计算总类内离差阵\(S_W\)：</strong><br>
+                            \[S_W = S_1 + S_2，其中S_i = \sum_{x \in X_i} (x - m_i)(x - m_i)^T\]<br><br>
+                            计算\(S_1\)（\(\omega_1\)类的类内离差阵）：<br>
+                            \(\mathbf{x}_{11} - \mathbf{m}_1 = \begin{bmatrix} 2 \\ 3 \end{bmatrix} - \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} -1 \\ -1 \end{bmatrix}\)<br>
+                            \(\mathbf{x}_{12} - \mathbf{m}_1 = \begin{bmatrix} 3 \\ 4 \end{bmatrix} - \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)<br>
+                            \(\mathbf{x}_{13} - \mathbf{m}_1 = \begin{bmatrix} 4 \\ 5 \end{bmatrix} - \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)<br>
+                            \[S_1 = \begin{bmatrix} -1 \\ -1 \end{bmatrix} \begin{bmatrix} -1 & -1 \end{bmatrix} + \begin{bmatrix} 0 \\ 0 \end{bmatrix} \begin{bmatrix} 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 \\ 1 \end{bmatrix} \begin{bmatrix} 1 & 1 \end{bmatrix}\]<br>
+                            \[S_1 = \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} + \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix}\]<br><br>
+                            计算\(S_2\)（\(\omega_2\)类的类内离差阵）：<br>
+                            \(\mathbf{x}_{21} - \mathbf{m}_2 = \begin{bmatrix} 6 \\ 7 \end{bmatrix} - \begin{bmatrix} 7 \\ 8 \end{bmatrix} = \begin{bmatrix} -1 \\ -1 \end{bmatrix}\)<br>
+                            \(\mathbf{x}_{22} - \mathbf{m}_2 = \begin{bmatrix} 7 \\ 8 \end{bmatrix} - \begin{bmatrix} 7 \\ 8 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)<br>
+                            \(\mathbf{x}_{23} - \mathbf{m}_2 = \begin{bmatrix} 8 \\ 9 \end{bmatrix} - \begin{bmatrix} 7 \\ 8 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)<br>
+                            \[S_2 = \begin{bmatrix} -1 \\ -1 \end{bmatrix} \begin{bmatrix} -1 & -1 \end{bmatrix} + \begin{bmatrix} 0 \\ 0 \end{bmatrix} \begin{bmatrix} 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 \\ 1 \end{bmatrix} \begin{bmatrix} 1 & 1 \end{bmatrix}\]<br>
+                            \[S_2 = \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} + \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix}\]<br><br>
+                            因此，总类内离差阵：\[S_W = S_1 + S_2 = \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix} + \begin{bmatrix} 2 & 2 \\ 2 & 2 \end{bmatrix} = \begin{bmatrix} 4 & 4 \\ 4 & 4 \end{bmatrix}\]<br><br>
+                            <strong>解析：</strong><strong style="color: red;">Fisher判别方法</strong>旨在最大化类间距离、最小化类内距离。计算步骤包括：1. 计算各类样本的<strong style="color: red;">均值矢量</strong>；2. 计算各类的<strong style="color: red;">类内离差阵</strong>；3. 计算<strong style="color: red;">总类内离差阵</strong>。<br>
+                            <strong>难度：</strong>★★★★★ <strong>知识点：</strong>Fisher线性判别
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button class="btn-primary" onclick="checkAnswers()">
+                            <i class="fas fa-check"></i> 检查答案
+                        </button>
+                        <button class="btn-secondary" onclick="showAllAnswers()">
+                            <i class="fas fa-eye"></i> 显示所有答案
+                        </button>
+                        <button class="btn-primary" onclick="clearAnswers()">
+                            <i class="fas fa-broom"></i> 清空答案
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-content">&copy; 2026 微助教习题库. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="lib/aos/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out'
+        });
+        
+        // 回到顶部按钮
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 监听滚动事件以控制回到顶部按钮
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
